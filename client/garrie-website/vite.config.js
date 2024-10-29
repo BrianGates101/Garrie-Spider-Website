@@ -5,4 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/Garrie-Spider-Website/client/garrie-website/', // Set this to match your repository path
+  build: {
+    outDir: 'dist', // Ensure output is compiled to JavaScript here
+  },
 })
