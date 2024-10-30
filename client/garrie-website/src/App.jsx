@@ -27,6 +27,12 @@ import { useEffect, useState } from 'react';
         .then((data) => setMessage(data))
         .catch((error) => console.error('Error fetching message:', error));
     }, []);
+    useEffect(() => {
+      fetch(API_URL)
+        .then(response => response.json())
+        .then(data => console.log('Backend connected:', data))
+        .catch(error => console.error('Backend error:', error));
+    }, []);
 
     return (
       <div>
