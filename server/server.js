@@ -17,7 +17,7 @@ const corsOptions = {
 const PORT = process.env.PORT || 5000;
 
 app.get('/api', (req, res) => {
-  res.send('Hello World from Server');
+  res.send('Hello World from Server Test');
 });
 
 app.listen(PORT, () => {
