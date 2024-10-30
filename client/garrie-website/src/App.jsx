@@ -37,6 +37,7 @@ import { useEffect, useState } from 'react';
     return (
       <div>
         <h1>{message}</h1>
+        <p>test</p>
       </div>
     );
   }
