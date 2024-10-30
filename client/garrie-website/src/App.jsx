@@ -20,9 +20,9 @@ import { useEffect, useState } from 'react';
 
   function App() {
     const [message, setMessage] = useState('');
-
+    const API_URL = import.meta.env.VITE_API_URL;
     useEffect(() => {
-      fetch(import.meta.env.VITE_API_URL)
+      fetch(API_URL)
         .then((response) => response.text())
         .then((data) => setMessage(data))
         .catch((error) => console.error('Error fetching message:', error));
